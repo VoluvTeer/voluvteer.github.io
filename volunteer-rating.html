@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+        Rate the opportunity!
+    </title>
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="css/rating.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Breadcrumb -->
+<ol class="breadcrumb">
+    <li>
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <strong class="fa-stack-1x">V</strong>
+        </span>
+    </li>
+    <li><a href="index.html">Home</a></li>
+    <li class="active">Volunteer Rating</li>
+</ol>
+<div class="container rating" id="fullpage">
+    <div class="section active" id="section0">
+        <h1>Thank you for volunteering at</h1>
+        <h1>the Art Institute of Chicago!</h1>
+        <img id="aic" src='img/aic.jpg'> <br>
+        <a href="#section1" class="btn btn-primary btn-lg" role="button">Rate your experience!</a>
+    </div>
+    <div class="section-divider"></div>
+    <div class="section" id="section1">
+        <h1> Rating </h1>
+        <div id="starRating">
+            <span id="star5" onclick="rate(this.id)">&#9734</span>
+            <span id="star4" onclick="rate(this.id)">&#9734</span>
+            <span id="star3" onclick="rate(this.id)">&#9734</span>
+            <span id="star2" onclick="rate(this.id)">&#9734</span>
+            <span id="star1" onclick="rate(this.id)">&#9734</span>
+        </div>
+        <h1> Comments </h1>
+        <textarea rows="5" cols="45"> </textarea> <br>
+        <a href="#section2" class="btn btn-success btn-lg" role="button">Rate!</a>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="section-divider"></div>
+    <div class="section" id="section2">
+        <h1> Thank you for rating this opportunity! </h1>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+</div>
+<script type="text/javascript">
+    function rate(id) {
+        var rating = id.charAt(4);
+        var str ='';
+        for (var i = 5; i > rating; i--)
+            str += '<span id="star' + i + '" onclick="rate(this.id)">&#9734</span>';
+        for (var i = rating; i > 0; i--)
+            str += '<span id="star' + i + '" onclick="rate(this.id)" style="color: orange">&#9733</span>';
+        $('#starRating').html(str);
+    }
+
+
+</script>
+
+</body>
+</html>
