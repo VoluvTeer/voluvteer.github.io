@@ -264,6 +264,9 @@ h2{
 #logo-text{
 	margin-bottom: 50px;
 }
+.index #div-log-in{
+	border-right: 1px solid #95a5a6;
+}
 .index .btn-primary{
 	background-color: #444;
 	color:white;
@@ -303,69 +306,32 @@ h2{
 	height: 160px;
 	padding-top: 40px;
 	margin-bottom: 20px;
-	color:#3498db;
+	/*color:#3498db;*/
 }
-.interest-icon i{
+.interest-icon i.fa-check{
 	display: none;	
 }
 .interest-icon span{
-	font-size: 2.0em;
-	background-color: rgba(0,0,0,0.7);
+	font-size: 1.6em;
+}
+.row-activities{
+	overflow-x: scroll;
+	white-space: nowrap;
 
 }
-#interest-animals{
-	background: url('../img/interest-icons/animals.png') center / cover;
+.card-activity{
+	width:33.33333%;
+	display: inline-block;
+	margin: 0px 10px;
 }
-#interest-art{
-	background: url('../img/interest-icons/art.png') center / cover;
+.card-activity i{
+	margin: 0px 5px;
 }
-#interest-disabled{
-	background: url('../img/interest-icons/disabled.png') center / cover;
+.card-activity i.fa-check-circle{
+	color:#2ecc71;
 }
-#interest-environment{
-	background: url('../img/interest-icons/environment.png') center / cover;
-}
-#interest-faith{
-	background: url('../img/interest-icons/faith.png') center / cover;
-}
-#interest-healthcare{
-	background: url('../img/interest-icons/healthcare.png') center / cover;
-}
-#interest-human{
-	background: url('../img/interest-icons/human.png') center / cover;
-}
-#interest-hunger{
-	background: url('../img/interest-icons/hunger.png') center / cover;
-}
-#interest-justice{
-	background: url('../img/interest-icons/justice.png') center / cover;
-}
-#interest-kids{
-	background: url('../img/interest-icons/kids.png') center / cover;
-}
-#interest-lgbt{
-	background: url('../img/interest-icons/lgbt.png') center / cover;
-}
-#interest-media{
-	background: url('../img/interest-icons/media.png') center / cover;
-}
-#interest-outdoors{
-	background: url('../img/interest-icons/outdoors.png') center / cover;
-}
-#interest-refugee{
-	background: url('../img/interest-icons/refugee.png') center / cover;
-}
-#interest-senior{
-	background: url('../img/interest-icons/senior.png') center / cover;
-}
-#interest-sports{
-	background: url('../img/interest-icons/sports.png') center / cover;
-}
-#interest-technology{
-	background: url('../img/interest-icons/technology.png') center / cover;
-}
-#interest-tutoring{
-	background: url('../img/interest-icons/tutoring.png') center / cover;
+.card-activity i.fa-times-circle{
+	color:#e74c3c;
 }
 a.btn{
 	margin: 20px 0px;
@@ -385,3 +351,4 @@ a.btn{
 #email-everyone a{
 	color:#444;
 }
+

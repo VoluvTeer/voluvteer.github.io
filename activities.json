@@ -1,0 +1,22 @@
+{"activities":[
+    {
+    	"title":"Activity 1",
+    	"body":"body 1",
+    	"href":"Link 1"
+    },
+    {
+    	"title":"Activity 2",
+    	"body":"body 2",
+    	"href":"Link 2"
+    },
+    {
+    	"title":"Activity 3",
+    	"body":"body 3",
+    	"href":"Link 3"
+    },
+    {
+    	"title":"Activity 4",
+    	"body":"body 4",
+    	"href":"Link 4"
+    }
+]}
