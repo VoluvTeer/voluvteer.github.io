@@ -66,5 +66,4 @@
         }
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmPygdIXZcpPrA9Yetgy8P7GLoOoIfc4U&signed_in=true&libraries=places&callback=initAutocomplete"
-        async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW5MA8yreQ_a8U-DFgInlFKR19vTWQvJ4&signed_in=true&libraries=places&callback=initAutocomplete" async defer></script>
